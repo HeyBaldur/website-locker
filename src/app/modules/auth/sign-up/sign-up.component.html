@@ -1,0 +1,44 @@
+<div class="form-body">
+  <div class="text-center">
+    <main class="form-signin w-100 m-auto">
+      <form>
+        <a [routerLink]="['/auth']" routerLinkActive="router-link-active">
+          <img class="mb-4" src="{{logo}}" alt="" width="72" height="72">
+        </a>
+        <h1 class="h3 mb-3">Create a free account</h1>
+        <h6 class="mb-3">You don't have to pay anything! Don't worry it is free!</h6>
+
+        <div class="form-floating">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating">
+          <input type="text" class="form-control" id="floatingName" placeholder="Your full name">
+          <label for="floatingName">Your full name</label>
+        </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+        
+
+        <p class="mb-3 sign-up-label-sm">
+          If you already have an account, please <a [routerLink]="['/auth/sign-in']">Sign in</a>
+        </p>
+        <div class="row">
+          <div class="col-md-6">
+            <a class="w-100 btn btn-outline-dark mt-3 mb-1" type="submit">Sign up</a>
+          </div>
+          <div class="col-md-6">
+            <a class="w-100 btn btn-dark mt-3 mb-1" type="submit">
+              <img src="{{github_logo}}" alt="" width="20" height="20">
+              Sign up
+            </a>
+          </div>
+        </div>
+        <p class="mt-2 mb-3 text-muted">&copy; 2017–2022 <br> <small>Website locker is open source and you can get the
+            source code here</small></p>
+      </form>
+    </main>
+  </div>
+</div>
